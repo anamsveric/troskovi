@@ -2,9 +2,9 @@
   "kind": "collectionType",
   "collectionName": "mjesecni_budget",
   "info": {
-    "singularName": "mjesecni-trosak",
-    "pluralName": "mjesecni-budget",
-    "displayName": "Mjesečni trošak"
+    "singularName": "mjesecni-budget",
+    "pluralName": "mjesecni-budgets",
+    "displayName": "Mjesečni budget"
   },
   "options": {
     "draftAndPublish": false

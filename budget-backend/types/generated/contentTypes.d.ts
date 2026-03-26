@@ -595,13 +595,13 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   };
 }
 
-export interface ApiMjesecniTrosakMjesecniTrosak
+export interface ApiMjesecniBudgetMjesecniBudget
   extends Struct.CollectionTypeSchema {
   collectionName: 'mjesecni_budget';
   info: {
-    displayName: 'Mjese\u010Dni tro\u0161ak';
-    pluralName: 'mjesecni-budget';
-    singularName: 'mjesecni-trosak';
+    displayName: 'Mjese\u010Dni budget';
+    pluralName: 'mjesecni-budgets';
+    singularName: 'mjesecni-budget';
   };
   options: {
     draftAndPublish: false;
@@ -629,7 +629,7 @@ export interface ApiMjesecniTrosakMjesecniTrosak
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
-      'api::mjesecni-trosak.mjesecni-trosak'
+      'api::mjesecni-budget.mjesecni-budget'
     > &
       Schema.Attribute.Private;
     obrazovanje: Schema.Attribute.Decimal & Schema.Attribute.DefaultTo<0>;
@@ -1186,7 +1186,7 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::global.global': ApiGlobalGlobal;
-      'api::mjesecni-trosak.mjesecni-trosak': ApiMjesecniTrosakMjesecniTrosak;
+      'api::mjesecni-budget.mjesecni-budget': ApiMjesecniBudgetMjesecniBudget;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
